@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <!-- Bootstrap CSS -->
+    <link href="./bootstrap.min.css" rel="stylesheet">
+    <!-- Canvas Confetti -->
+    <script src="./confetti.browser.min.js"></script>
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class=" text-center">
+                <h1 class="mb-4 game-title">Snake Game</h1>
+                <div id="game-board" class="moving-border">
+                    <div class="menu-container">
+                        <div class="score-board" id="score-board"></div>
+                        <div class="start-menu" id="start-menu">
+                            <h2 >Welcome to Snake Game</h2>
+                            <button class="btn btn-primary" id="start-button">Start Game</button>
+                        </div>
+                        <div class="game-over-menu" id="game-over-menu">
+                            <h2 id="game-over-title"></h2>
+                            <p id="final-score">Score: 0</p>
+                            <button class="btn btn-primary" id="restart-button">Restart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="control-button" class="control-button">
+                    <div id="up-arrow" class="arrow up"></div>
+                    <div id="down-arrow" class="arrow down"></div>
+                    <div id="left-arrow" class="arrow left"></div>
+                    <div id="right-arrow" class="arrow right"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap JS and dependencies -->
+        <script src="./jquery-3.5.1.slim.min.js"></script>
+        <script src="./popper.min.js"></script>
+        <script src="./bootstrap.min.js"></script>
+
+        <script src="./main.js"></script>
+</body>
+
+</html>
